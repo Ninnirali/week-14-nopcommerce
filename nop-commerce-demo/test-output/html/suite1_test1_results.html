@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login, Computer and Register Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login, Computer and Register Test</h1>
+<p>
+  Test duration: 154.823s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  VerifyThatUserShouldLogOutSuccessFully
+      </td>
+  <td class="duration">
+    41.465s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click On Login[[ChromeDriver: chrome on WINDOWS (201692c142f95b24f243643f51ab4db7)] -&gt; link text: Log in]&lt;br&gt;<br />
+                                Enter email[[ChromeDriver: chrome on WINDOWS (201692c142f95b24f243643f51ab4db7)] -&gt; xpath: //input[@id=&apos;Email&apos;]]&lt;br&gt;<br />
+                                Enter password[[ChromeDriver: chrome on WINDOWS (201692c142f95b24f243643f51ab4db7)] -&gt; name: Password]&lt;br&gt;<br />
+                                Click on login[[ChromeDriver: chrome on WINDOWS (201692c142f95b24f243643f51ab4db7)] -&gt; xpath: //button[@class=&apos;button-1 login-button&apos;]]&lt;br&gt;<br />
+                                Click on login buttonProxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(text(),&apos;Log out&apos;)]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Log out&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-OS99UNT&apos;, ip: &apos;192.168.68.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [201692c142f95b24f243643f51ab4db7, findElement {using=xpath, value=//a[contains(text(),&apos;Log out&apos;)]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\NIRALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63607/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 201692c142f95b24f243643f51ab4db7</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.click(Unknown Source)<br />
+              com.nopcommerce.demo.utility.Utility.clickOnElement(Utility.java:56)<br />
+              com.nopcommerce.demo.pages.HomePage.clickOnLogOutLink(HomePage.java:99)<br />
+              com.nopcommerce.demo.testsuite.LoginPageTest.VerifyThatUserShouldLogOutSuccessFully(LoginPageTest.java:60)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldLogInSuccessFullyWithValidCredentials
+      </td>
+  <td class="duration">
+    41.509s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click On Login[[ChromeDriver: chrome on WINDOWS (49a6c2820fe91dee1d7e1af8554f81f6)] -&gt; link text: Log in]&lt;br&gt;<br />
+                                Enter email[[ChromeDriver: chrome on WINDOWS (49a6c2820fe91dee1d7e1af8554f81f6)] -&gt; xpath: //input[@id=&apos;Email&apos;]]&lt;br&gt;<br />
+                                Enter password[[ChromeDriver: chrome on WINDOWS (49a6c2820fe91dee1d7e1af8554f81f6)] -&gt; name: Password]&lt;br&gt;<br />
+                                Click on login[[ChromeDriver: chrome on WINDOWS (49a6c2820fe91dee1d7e1af8554f81f6)] -&gt; xpath: //button[@class=&apos;button-1 login-button&apos;]]&lt;br&gt;<br />
+                                Verify my account textProxy element for: DefaultElementLocator &apos;By.xpath: //a[@class=&apos;ico-account&apos;]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;ico-account&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-OS99UNT&apos;, ip: &apos;192.168.68.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [49a6c2820fe91dee1d7e1af8554f81f6, findElement {using=xpath, value=//a[@class=&apos;ico-account&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\NIRALI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63651/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 49a6c2820fe91dee1d7e1af8554f81f6</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.getText(Unknown Source)<br />
+              com.nopcommerce.demo.utility.Utility.getTextFromElement(Utility.java:67)<br />
+              com.nopcommerce.demo.pages.HomePage.getMyAccountText(HomePage.java:91)<br />
+              com.nopcommerce.demo.testsuite.LoginPageTest.verifyThatUserShouldLogInSuccessFullyWithValidCredentials(LoginPageTest.java:51)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.ComputerPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserShouldBuildYouOwnComputerAndAddThemToCartSuccessfully
+      </td>
+  <td class="duration">
+    4.932s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"2.2 GHz Intel Pentium Dual-Core E2200", "2 GB", "320 GB", "Vista Home [+$50.00]", "Microsoft Office [+$50.00]"</span><br />
+    
+            <div class="testOutput">
+                        click on computer[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; link text: Computers]&lt;br&gt;<br />
+                                Click on desktop[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/ul[1]/li[1]/a[1]]&lt;br&gt;<br />
+                                click on ram [[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/button[1]]&lt;br&gt;<br />
+                                Verify build your own computer[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //h2[@class=&apos;product-title&apos;]/a[contains(text(),&apos;Build your own computer&apos;)]][[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //h2[@class=&apos;product-title&apos;]/a[contains(text(),&apos;Build your own computer&apos;)]]<br />
+                                click on processor[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; id: product_attribute_1]&lt;br&gt;<br />
+                                click on ram [[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //select[@id=&apos;product_attribute_2&apos;]]&lt;br&gt;<br />
+                                click on hdd radio button[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //input[@id=&apos;product_attribute_3_6&apos;]]&lt;br&gt;<br />
+                                click on processor[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //input[@id=&apos;product_attribute_4_9&apos;]]&lt;br&gt;<br />
+                                click on soft ware box[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; xpath: //input[@id=&apos;product_attribute_5_10&apos;]]&lt;br&gt;<br />
+                                click on add to card[[ChromeDriver: chrome on WINDOWS (46458eaf146a8b6d4d34dec8ccf9e53e)] -&gt; id: add-to-cart-button-1]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldBuildYouOwnComputerAndAddThemToCartSuccessfully
+      </td>
+  <td class="duration">
+    4.305s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]", "4GB [+$20.00]", "400 GB [+$100.00]", "Vista Premium [+$60.00]", "Acrobat Reader [+$10.00]"</span><br />
+    
+            <div class="testOutput">
+                        click on computer[[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; link text: Computers]&lt;br&gt;<br />
+                                Click on desktop[[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/ul[1]/li[1]/a[1]]&lt;br&gt;<br />
+                                click on ram [[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/button[1]]&lt;br&gt;<br />
+                                Verify build your own computer[[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; xpath: //h2[@class=&apos;product-title&apos;]/a[contains(text(),&apos;Build your own computer&apos;)]][[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; xpath: //h2[@class=&apos;product-title&apos;]/a[contains(text(),&apos;Build your own computer&apos;)]]<br />
+                                click on processor[[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; id: product_attribute_1]&lt;br&gt;<br />
+                                click on ram [[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; xpath: //select[@id=&apos;product_attribute_2&apos;]]&lt;br&gt;<br />
+                                click on hdd radio button[[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; xpath: //input[@id=&apos;product_attribute_3_6&apos;]]&lt;br&gt;<br />
+                                click on add to card[[ChromeDriver: chrome on WINDOWS (68fb3956493f182c62111c8915e8911a)] -&gt; id: add-to-cart-button-1]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldBuildYouOwnComputerAndAddThemToCartSuccessfully
+      </td>
+  <td class="duration">
+    4.006s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]", "8GB [+$60.00]", "320 GB", "Vista Home [+$50.00]", "Total Commander [+$5.00]"</span><br />
+    
+            <div class="testOutput">
+                        click on computer[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; link text: Computers]&lt;br&gt;<br />
+                                Click on desktop[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/ul[1]/li[1]/a[1]]&lt;br&gt;<br />
+                                click on ram [[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/button[1]]&lt;br&gt;<br />
+                                Verify build your own computer[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //h2[@class=&apos;product-title&apos;]/a[contains(text(),&apos;Build your own computer&apos;)]][[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //h2[@class=&apos;product-title&apos;]/a[contains(text(),&apos;Build your own computer&apos;)]]<br />
+                                click on processor[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; id: product_attribute_1]&lt;br&gt;<br />
+                                click on ram [[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //select[@id=&apos;product_attribute_2&apos;]]&lt;br&gt;<br />
+                                click on hdd radio button[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //input[@id=&apos;product_attribute_3_6&apos;]]&lt;br&gt;<br />
+                                click on processor[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; xpath: //input[@id=&apos;product_attribute_4_9&apos;]]&lt;br&gt;<br />
+                                click on add to card[[ChromeDriver: chrome on WINDOWS (b83df154dba94884d26ff94d90f7ca45)] -&gt; id: add-to-cart-button-1]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToComputerPageSuccessfully
+      </td>
+  <td class="duration">
+    0.916s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        click on computer[[ChromeDriver: chrome on WINDOWS (1cccf9bdb7edb1d6403c1790c57dd0ad)] -&gt; link text: Computers]&lt;br&gt;<br />
+                                Click on computer[[ChromeDriver: chrome on WINDOWS (1cccf9bdb7edb1d6403c1790c57dd0ad)] -&gt; xpath: //h1[contains(text(),&apos;Computers&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToDesktopsPageSuccessfully
+      </td>
+  <td class="duration">
+    1.438s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        click on computer[[ChromeDriver: chrome on WINDOWS (acae415106652b34ef9f4767f4231d76)] -&gt; link text: Computers]&lt;br&gt;<br />
+                                Click on desktop[[ChromeDriver: chrome on WINDOWS (acae415106652b34ef9f4767f4231d76)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/ul[1]/li[1]/a[1]]&lt;br&gt;<br />
+                                Verify desktops text[[ChromeDriver: chrome on WINDOWS (acae415106652b34ef9f4767f4231d76)] -&gt; xpath: //h1[contains(text(),&apos;Desktops&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyErrorMessageWithInvalidCredentials
+      </td>
+  <td class="duration">
+    1.426s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click On Login[[ChromeDriver: chrome on WINDOWS (91692040d5dbcde6dc4498feef7d40d2)] -&gt; link text: Log in]&lt;br&gt;<br />
+                                Enter email[[ChromeDriver: chrome on WINDOWS (91692040d5dbcde6dc4498feef7d40d2)] -&gt; xpath: //input[@id=&apos;Email&apos;]]&lt;br&gt;<br />
+                                Enter password[[ChromeDriver: chrome on WINDOWS (91692040d5dbcde6dc4498feef7d40d2)] -&gt; name: Password]&lt;br&gt;<br />
+                                Click on login[[ChromeDriver: chrome on WINDOWS (91692040d5dbcde6dc4498feef7d40d2)] -&gt; xpath: //button[@class=&apos;button-1 login-button&apos;]]&lt;br&gt;<br />
+                                Verify login error text[[ChromeDriver: chrome on WINDOWS (91692040d5dbcde6dc4498feef7d40d2)] -&gt; xpath: //div[@class=&apos;message-error validation-summary-errors&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLoginPage
+      </td>
+  <td class="duration">
+    0.801s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click On Login[[ChromeDriver: chrome on WINDOWS (594fe59c046884fa59f8e19893645819)] -&gt; link text: Log in]&lt;br&gt;<br />
+                                Verify welcome text[[ChromeDriver: chrome on WINDOWS (594fe59c046884fa59f8e19893645819)] -&gt; xpath: //h1[contains(text(),&apos;Welcome, Please Sign In!&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.RegisterPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatFirstNameLastNameEmailPasswordAndConfirmPasswordFieldsAreMandatory
+      </td>
+  <td class="duration">
+    0.985s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on register[[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; xpath: //a[contains(text(),&apos;Register&apos;)]]&lt;br&gt;<br />
+                                Click register [[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; xpath: //button[@id=&apos;register-button&apos;]]&lt;br&gt;<br />
+                                Verify first name error text[[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; xpath: //span[@id=&apos;FirstName-error&apos;]]&lt;br&gt;<br />
+                                Verify last name error text[[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; id: LastName-error]&lt;br&gt;<br />
+                                Verify email error text[[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; id: Email-error]&lt;br&gt;<br />
+                                Verify password error text[[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; id: Password-error]&lt;br&gt;<br />
+                                Verify confirm password error text[[ChromeDriver: chrome on WINDOWS (874b83b57d658e50e9b3c9b17647f88c)] -&gt; id: ConfirmPassword-error]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldCreateAccountSuccessfully
+      </td>
+  <td class="duration">
+    2.715s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on register[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //a[contains(text(),&apos;Register&apos;)]]&lt;br&gt;<br />
+                                Click gender button[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //input[@id=&apos;gender-male&apos;]]&lt;br&gt;<br />
+                                Click on first name [[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //input[@id=&apos;FirstName&apos;]]&lt;br&gt;<br />
+                                Click on last name Brown[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //input[@id=&apos;LastName&apos;]]&lt;br&gt;<br />
+                                select day[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //select[@name=&apos;DateOfBirthDay&apos;]]&lt;br&gt;<br />
+                                select month[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //body/div[6]/div[3]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[4]/div[1]/select[2]]&lt;br&gt;<br />
+                                select day[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //select[@name=&apos;DateOfBirthYear&apos;]]&lt;br&gt;<br />
+                                Send email AB01070@gmail.com[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //input[@id=&apos;Email&apos;]]&lt;br&gt;<br />
+                                send password 12345678[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //input[@id=&apos;Password&apos;]]&lt;br&gt;<br />
+                                Confirm password 12345678[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //input[@id=&apos;ConfirmPassword&apos;]]&lt;br&gt;<br />
+                                Click register [[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //button[@id=&apos;register-button&apos;]]&lt;br&gt;<br />
+                                Verify registration completed text[[ChromeDriver: chrome on WINDOWS (4535756a92beb4fa26721757e1606a45)] -&gt; xpath: //div[contains(text(),&apos;Your registration completed&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToRegisterPageSuccessfully
+      </td>
+  <td class="duration">
+    0.796s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on register[[ChromeDriver: chrome on WINDOWS (787bd36b90708c2ce78fd7558343fc4c)] -&gt; xpath: //a[contains(text(),&apos;Register&apos;)]]&lt;br&gt;<br />
+                                Verify register text[[ChromeDriver: chrome on WINDOWS (787bd36b90708c2ce78fd7558343fc4c)] -&gt; xpath: //h1[contains(text(),&apos;Register&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
